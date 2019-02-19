@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3BA08A221B620E004FA374 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA089221B620E004FA374 /* AppDelegate.m */; };
+		CE3BA08D221B620E004FA374 /* AICityWeatherForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA08C221B620E004FA374 /* AICityWeatherForecastViewController.m */; };
+		CE3BA090221B620E004FA374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA08E221B620E004FA374 /* Main.storyboard */; };
+		CE3BA092221B620E004FA374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA091221B620E004FA374 /* Assets.xcassets */; };
+		CE3BA095221B620E004FA374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA093221B620E004FA374 /* LaunchScreen.storyboard */; };
+		CE3BA098221B620E004FA374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA097221B620E004FA374 /* main.m */; };
+		CE3BA0B8221B6302004FA374 /* AICityWeatherForecastConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0B7221B6302004FA374 /* AICityWeatherForecastConfigurator.m */; };
+		CE3BA0BE221B63AE004FA374 /* AICityWeatherForecastInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0BD221B63AE004FA374 /* AICityWeatherForecastInteractor.m */; };
+		CE3BA0C1221B63C7004FA374 /* AICityWeatherForecastPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0C0221B63C7004FA374 /* AICityWeatherForecastPresenter.m */; };
+		CE3BA0C6221B643F004FA374 /* AIOpenWeatherMapNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0C5221B643F004FA374 /* AIOpenWeatherMapNetworkService.m */; };
+		CE3BA0CB221B6472004FA374 /* AIOpenWeatherMapDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0CA221B6472004FA374 /* AIOpenWeatherMapDataParser.m */; };
+		CE3BA0CF221B648D004FA374 /* AINetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0CE221B648D004FA374 /* AINetworkTask.m */; };
+		CE3BA0D9221B65C7004FA374 /* AIOpenWeatherMapPODataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BA0D8221B65C7004FA374 /* AIOpenWeatherMapPODataAdapter.m */; };
+		CEA93D0C221B913C00085A27 /* AICityWeatherForecastTimeoutService.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA93D0B221B913C00085A27 /* AICityWeatherForecastTimeoutService.m */; };
+		CEA93D18221BAA0F00085A27 /* NSDictionary+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA93D17221BAA0F00085A27 /* NSDictionary+Accessors.m */; };
+		CEA93D1D221BB64C00085A27 /* AICityWeatherForecastPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA93D1C221BB64C00085A27 /* AICityWeatherForecastPlainObject.m */; };
+		CEA93D1F221C2DB300085A27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEA93D1E221C2DB300085A27 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE3BA09E221B620E004FA374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3BA07D221B620D004FA374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3BA084221B620E004FA374;
+			remoteInfo = CityWeatherForecastApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE3BA085221B620E004FA374 /* CityWeatherForecastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityWeatherForecastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3BA088221B620E004FA374 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE3BA089221B620E004FA374 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE3BA08B221B620E004FA374 /* AICityWeatherForecastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastViewController.h; sourceTree = "<group>"; };
+		CE3BA08C221B620E004FA374 /* AICityWeatherForecastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastViewController.m; sourceTree = "<group>"; };
+		CE3BA08F221B620E004FA374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE3BA091221B620E004FA374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE3BA094221B620E004FA374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE3BA096221B620E004FA374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3BA097221B620E004FA374 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE3BA09D221B620E004FA374 /* CityWeatherForecastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityWeatherForecastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3BA0B6221B6302004FA374 /* AICityWeatherForecastConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastConfigurator.h; sourceTree = "<group>"; };
+		CE3BA0B7221B6302004FA374 /* AICityWeatherForecastConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastConfigurator.m; sourceTree = "<group>"; };
+		CE3BA0B9221B632E004FA374 /* AICityWeatherForecastViewInputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastViewInputProtocol.h; sourceTree = "<group>"; };
+		CE3BA0BA221B6382004FA374 /* AICityWeatherForecastInteractorInputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastInteractorInputProtocol.h; sourceTree = "<group>"; };
+		CE3BA0BC221B63AE004FA374 /* AICityWeatherForecastInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastInteractor.h; sourceTree = "<group>"; };
+		CE3BA0BD221B63AE004FA374 /* AICityWeatherForecastInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastInteractor.m; sourceTree = "<group>"; };
+		CE3BA0BF221B63C7004FA374 /* AICityWeatherForecastPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastPresenter.h; sourceTree = "<group>"; };
+		CE3BA0C0221B63C7004FA374 /* AICityWeatherForecastPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastPresenter.m; sourceTree = "<group>"; };
+		CE3BA0C4221B643F004FA374 /* AIOpenWeatherMapNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOpenWeatherMapNetworkService.h; sourceTree = "<group>"; };
+		CE3BA0C5221B643F004FA374 /* AIOpenWeatherMapNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIOpenWeatherMapNetworkService.m; sourceTree = "<group>"; };
+		CE3BA0C9221B6472004FA374 /* AIOpenWeatherMapDataParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOpenWeatherMapDataParser.h; sourceTree = "<group>"; };
+		CE3BA0CA221B6472004FA374 /* AIOpenWeatherMapDataParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIOpenWeatherMapDataParser.m; sourceTree = "<group>"; };
+		CE3BA0CD221B648D004FA374 /* AINetworkTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AINetworkTask.h; sourceTree = "<group>"; };
+		CE3BA0CE221B648D004FA374 /* AINetworkTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AINetworkTask.m; sourceTree = "<group>"; };
+		CE3BA0D0221B64BC004FA374 /* AICityWeatherForecastPlainObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastPlainObject.h; sourceTree = "<group>"; };
+		CE3BA0D7221B65C6004FA374 /* AIOpenWeatherMapPODataAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOpenWeatherMapPODataAdapter.h; sourceTree = "<group>"; };
+		CE3BA0D8221B65C7004FA374 /* AIOpenWeatherMapPODataAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIOpenWeatherMapPODataAdapter.m; sourceTree = "<group>"; };
+		CE981032221B76EE00DF2B04 /* AICityWeatherForecastDataFetchingServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastDataFetchingServiceProtocol.h; sourceTree = "<group>"; };
+		CE981034221B77C400DF2B04 /* AICityWeatherForecastDataFetchingServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastDataFetchingServiceDelegate.h; sourceTree = "<group>"; };
+		CEA93D07221B813C00085A27 /* AICityWeatherForecastViewOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastViewOutputProtocol.h; sourceTree = "<group>"; };
+		CEA93D08221B8F3000085A27 /* AICityWeatherForecastInteractorOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastInteractorOutputProtocol.h; sourceTree = "<group>"; };
+		CEA93D0A221B913C00085A27 /* AICityWeatherForecastTimeoutService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastTimeoutService.h; sourceTree = "<group>"; };
+		CEA93D0B221B913C00085A27 /* AICityWeatherForecastTimeoutService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastTimeoutService.m; sourceTree = "<group>"; };
+		CEA93D0D221B919200085A27 /* AICityWeatherForecastTimeoutServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastTimeoutServiceDelegate.h; sourceTree = "<group>"; };
+		CEA93D0E221B91BD00085A27 /* AICityWeatherForecastTimeoutServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICityWeatherForecastTimeoutServiceProtocol.h; sourceTree = "<group>"; };
+		CEA93D0F221BA3ED00085A27 /* AIOpenWeaherMapParsedDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOpenWeaherMapParsedDataProtocol.h; sourceTree = "<group>"; };
+		CEA93D10221BA65000085A27 /* CityWeatherForecastApp.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityWeatherForecastApp.pch; sourceTree = "<group>"; };
+		CEA93D16221BAA0F00085A27 /* NSDictionary+Accessors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Accessors.h"; sourceTree = "<group>"; };
+		CEA93D17221BAA0F00085A27 /* NSDictionary+Accessors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Accessors.m"; sourceTree = "<group>"; };
+		CEA93D1C221BB64C00085A27 /* AICityWeatherForecastPlainObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AICityWeatherForecastPlainObject.m; sourceTree = "<group>"; };
+		CEA93D1E221C2DB300085A27 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3BA082221B620E004FA374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BA09A221B620E004FA374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3BA07C221B620D004FA374 = {
+			isa = PBXGroup;
+			children = (
+				CE3BA087221B620E004FA374 /* CityWeatherForecastApp */,
+				CE3BA097221B620E004FA374 /* main.m */,
+				CEA93D10221BA65000085A27 /* CityWeatherForecastApp.pch */,
+				CE3BA086221B620E004FA374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE3BA086221B620E004FA374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA085221B620E004FA374 /* CityWeatherForecastApp.app */,
+				CE3BA09D221B620E004FA374 /* CityWeatherForecastAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE3BA087221B620E004FA374 /* CityWeatherForecastApp */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0B4221B6261004FA374 /* Assembly */,
+				CE3BA0AC221B6217004FA374 /* View */,
+				CE3BA0AE221B6223004FA374 /* Interactor */,
+				CE3BA0AD221B621D004FA374 /* Presenter */,
+				CE3BA0AF221B6228004FA374 /* Models */,
+				CE3BA0B0221B6230004FA374 /* Services */,
+				CEA93D12221BA97400085A27 /* Extensions */,
+				CE3BA0B2221B623B004FA374 /* Storyboards */,
+				CE3BA0B3221B6243004FA374 /* Resources */,
+				CE3BA0B1221B6236004FA374 /* App Delegate */,
+			);
+			path = CityWeatherForecastApp;
+			sourceTree = "<group>";
+		};
+		CE3BA0AC221B6217004FA374 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA08B221B620E004FA374 /* AICityWeatherForecastViewController.h */,
+				CE3BA08C221B620E004FA374 /* AICityWeatherForecastViewController.m */,
+				CE3BA0B9221B632E004FA374 /* AICityWeatherForecastViewInputProtocol.h */,
+				CEA93D07221B813C00085A27 /* AICityWeatherForecastViewOutputProtocol.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE3BA0AD221B621D004FA374 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0BF221B63C7004FA374 /* AICityWeatherForecastPresenter.h */,
+				CE3BA0C0221B63C7004FA374 /* AICityWeatherForecastPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE3BA0AE221B6223004FA374 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0BA221B6382004FA374 /* AICityWeatherForecastInteractorInputProtocol.h */,
+				CEA93D08221B8F3000085A27 /* AICityWeatherForecastInteractorOutputProtocol.h */,
+				CE3BA0BC221B63AE004FA374 /* AICityWeatherForecastInteractor.h */,
+				CE3BA0BD221B63AE004FA374 /* AICityWeatherForecastInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE3BA0AF221B6228004FA374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0D0221B64BC004FA374 /* AICityWeatherForecastPlainObject.h */,
+				CEA93D1C221BB64C00085A27 /* AICityWeatherForecastPlainObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE3BA0B0221B6230004FA374 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEA93D09221B911000085A27 /* Timeout service */,
+				CE981033221B774E00DF2B04 /* Data Fetching Service */,
+				CE981031221B75C500DF2B04 /* Definitions */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE3BA0B1221B6236004FA374 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA088221B620E004FA374 /* AppDelegate.h */,
+				CE3BA089221B620E004FA374 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		CE3BA0B2221B623B004FA374 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA08E221B620E004FA374 /* Main.storyboard */,
+				CE3BA093221B620E004FA374 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE3BA0B3221B6243004FA374 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA096221B620E004FA374 /* Info.plist */,
+				CE3BA091221B620E004FA374 /* Assets.xcassets */,
+				CEA93D1E221C2DB300085A27 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE3BA0B4221B6261004FA374 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0B6221B6302004FA374 /* AICityWeatherForecastConfigurator.h */,
+				CE3BA0B7221B6302004FA374 /* AICityWeatherForecastConfigurator.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CE3BA0C8221B6452004FA374 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				CEA93D0F221BA3ED00085A27 /* AIOpenWeaherMapParsedDataProtocol.h */,
+				CE3BA0C9221B6472004FA374 /* AIOpenWeatherMapDataParser.h */,
+				CE3BA0CA221B6472004FA374 /* AIOpenWeatherMapDataParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		CE3BA0CC221B6478004FA374 /* Network Task */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0CD221B648D004FA374 /* AINetworkTask.h */,
+				CE3BA0CE221B648D004FA374 /* AINetworkTask.m */,
+			);
+			path = "Network Task";
+			sourceTree = "<group>";
+		};
+		CE3BA0D3221B6543004FA374 /* Data Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0D7221B65C6004FA374 /* AIOpenWeatherMapPODataAdapter.h */,
+				CE3BA0D8221B65C7004FA374 /* AIOpenWeatherMapPODataAdapter.m */,
+			);
+			path = "Data Adapter";
+			sourceTree = "<group>";
+		};
+		CE981030221B75AF00DF2B04 /* Open Weather Map Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0C4221B643F004FA374 /* AIOpenWeatherMapNetworkService.h */,
+				CE3BA0C5221B643F004FA374 /* AIOpenWeatherMapNetworkService.m */,
+				CE3BA0D3221B6543004FA374 /* Data Adapter */,
+				CE3BA0C8221B6452004FA374 /* Parser */,
+			);
+			path = "Open Weather Map Service";
+			sourceTree = "<group>";
+		};
+		CE981031221B75C500DF2B04 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BA0CC221B6478004FA374 /* Network Task */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		CE981033221B774E00DF2B04 /* Data Fetching Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE981034221B77C400DF2B04 /* AICityWeatherForecastDataFetchingServiceDelegate.h */,
+				CE981032221B76EE00DF2B04 /* AICityWeatherForecastDataFetchingServiceProtocol.h */,
+				CE981030221B75AF00DF2B04 /* Open Weather Map Service */,
+			);
+			path = "Data Fetching Service";
+			sourceTree = "<group>";
+		};
+		CEA93D09221B911000085A27 /* Timeout service */ = {
+			isa = PBXGroup;
+			children = (
+				CEA93D0A221B913C00085A27 /* AICityWeatherForecastTimeoutService.h */,
+				CEA93D0B221B913C00085A27 /* AICityWeatherForecastTimeoutService.m */,
+				CEA93D0D221B919200085A27 /* AICityWeatherForecastTimeoutServiceDelegate.h */,
+				CEA93D0E221B91BD00085A27 /* AICityWeatherForecastTimeoutServiceProtocol.h */,
+			);
+			path = "Timeout service";
+			sourceTree = "<group>";
+		};
+		CEA93D12221BA97400085A27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEA93D16221BAA0F00085A27 /* NSDictionary+Accessors.h */,
+				CEA93D17221BAA0F00085A27 /* NSDictionary+Accessors.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3BA084221B620E004FA374 /* CityWeatherForecastApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3BA0A6221B620E004FA374 /* Build configuration list for PBXNativeTarget "CityWeatherForecastApp" */;
+			buildPhases = (
+				CE3BA081221B620E004FA374 /* Sources */,
+				CE3BA082221B620E004FA374 /* Frameworks */,
+				CE3BA083221B620E004FA374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityWeatherForecastApp;
+			productName = CityWeatherForecastApp;
+			productReference = CE3BA085221B620E004FA374 /* CityWeatherForecastApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE3BA09C221B620E004FA374 /* CityWeatherForecastAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3BA0A9221B620E004FA374 /* Build configuration list for PBXNativeTarget "CityWeatherForecastAppTests" */;
+			buildPhases = (
+				CE3BA099221B620E004FA374 /* Sources */,
+				CE3BA09A221B620E004FA374 /* Frameworks */,
+				CE3BA09B221B620E004FA374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3BA09F221B620E004FA374 /* PBXTargetDependency */,
+			);
+			name = CityWeatherForecastAppTests;
+			productName = CityWeatherForecastAppTests;
+			productReference = CE3BA09D221B620E004FA374 /* CityWeatherForecastAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3BA07D221B620D004FA374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = a.ildarkin;
+				TargetAttributes = {
+					CE3BA084221B620E004FA374 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CE3BA09C221B620E004FA374 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE3BA084221B620E004FA374;
+					};
+				};
+			};
+			buildConfigurationList = CE3BA080221B620D004FA374 /* Build configuration list for PBXProject "CityWeatherForecastApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE3BA07C221B620D004FA374;
+			productRefGroup = CE3BA086221B620E004FA374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3BA084221B620E004FA374 /* CityWeatherForecastApp */,
+				CE3BA09C221B620E004FA374 /* CityWeatherForecastAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3BA083221B620E004FA374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BA095221B620E004FA374 /* LaunchScreen.storyboard in Resources */,
+				CEA93D1F221C2DB300085A27 /* Localizable.strings in Resources */,
+				CE3BA092221B620E004FA374 /* Assets.xcassets in Resources */,
+				CE3BA090221B620E004FA374 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BA09B221B620E004FA374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3BA081221B620E004FA374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BA08D221B620E004FA374 /* AICityWeatherForecastViewController.m in Sources */,
+				CE3BA0C6221B643F004FA374 /* AIOpenWeatherMapNetworkService.m in Sources */,
+				CE3BA098221B620E004FA374 /* main.m in Sources */,
+				CE3BA08A221B620E004FA374 /* AppDelegate.m in Sources */,
+				CEA93D18221BAA0F00085A27 /* NSDictionary+Accessors.m in Sources */,
+				CE3BA0CF221B648D004FA374 /* AINetworkTask.m in Sources */,
+				CE3BA0B8221B6302004FA374 /* AICityWeatherForecastConfigurator.m in Sources */,
+				CEA93D0C221B913C00085A27 /* AICityWeatherForecastTimeoutService.m in Sources */,
+				CE3BA0D9221B65C7004FA374 /* AIOpenWeatherMapPODataAdapter.m in Sources */,
+				CEA93D1D221BB64C00085A27 /* AICityWeatherForecastPlainObject.m in Sources */,
+				CE3BA0BE221B63AE004FA374 /* AICityWeatherForecastInteractor.m in Sources */,
+				CE3BA0C1221B63C7004FA374 /* AICityWeatherForecastPresenter.m in Sources */,
+				CE3BA0CB221B6472004FA374 /* AIOpenWeatherMapDataParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BA099221B620E004FA374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3BA09F221B620E004FA374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3BA084221B620E004FA374 /* CityWeatherForecastApp */;
+			targetProxy = CE3BA09E221B620E004FA374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE3BA08E221B620E004FA374 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3BA08F221B620E004FA374 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE3BA093221B620E004FA374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3BA094221B620E004FA374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE3BA0A4221B620E004FA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE3BA0A5221B620E004FA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE3BA0A7221B620E004FA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_MISSING_NOESCAPE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DV39XQQ6K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CityWeatherForecastApp.pch";
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/CityWeatherForecastApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AI.CityWeatherForecastApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3BA0A8221B620E004FA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_DISABLE_PRIVATE_WARNING = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_MISSING_NOESCAPE = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DV39XQQ6K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CityWeatherForecastApp.pch";
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/CityWeatherForecastApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AI.CityWeatherForecastApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE3BA0AA221B620E004FA374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DV39XQQ6K;
+				INFOPLIST_FILE = CityWeatherForecastAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AI.CityWeatherForecastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityWeatherForecastApp.app/CityWeatherForecastApp";
+			};
+			name = Debug;
+		};
+		CE3BA0AB221B620E004FA374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DV39XQQ6K;
+				INFOPLIST_FILE = CityWeatherForecastAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AI.CityWeatherForecastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityWeatherForecastApp.app/CityWeatherForecastApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3BA080221B620D004FA374 /* Build configuration list for PBXProject "CityWeatherForecastApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BA0A4221B620E004FA374 /* Debug */,
+				CE3BA0A5221B620E004FA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3BA0A6221B620E004FA374 /* Build configuration list for PBXNativeTarget "CityWeatherForecastApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BA0A7221B620E004FA374 /* Debug */,
+				CE3BA0A8221B620E004FA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3BA0A9221B620E004FA374 /* Build configuration list for PBXNativeTarget "CityWeatherForecastAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BA0AA221B620E004FA374 /* Debug */,
+				CE3BA0AB221B620E004FA374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3BA07D221B620D004FA374 /* Project object */;
+}

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CityWeatherForecastApp
+
+  Created by user on 19/02/2019.
+  Copyright © 2019 a.ildarkin. All rights reserved.
+*/
+
+ERROR_TITLE_TEXT = "Error!";
+PARSING_DATA_ERROR_TEXT = "Could not parse weather forecast data";
